@@ -1,2 +1,2 @@
 multiplyTuple tup = (fst tup) * (snd tup)
-finalGrade a b = map multiplyTuple (zip a b) / sum b
+finalGrade a b = sum (map multiplyTuple (zip a b)) `div` sum b
